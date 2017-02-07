@@ -1,0 +1,11 @@
+version: '2.0'
+services:
+  torproxy:
+    image: ufud/rpi-torproxy:latest
+    container_name: torproxy
+    restart: always
+    ports:
+      - "9001:9001"
+      - "9030:9030"
+      - "9050:9050"
+      - "8118:8118"
